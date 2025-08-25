@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>2048</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<h1 class="title">2048</h1>
+			<div class="scores">
+				<div class="score"><span class="label">Счёт</span><span id="score">0</span></div>
+				<div class="score"><span class="label">Рекорд</span><span id="best">0</span></div>
+			</div>
+		</header>
+		<div class="actions">
+			<button id="new-game" class="btn">Новая игра</button>
+		</div>
+		<div class="board-wrap">
+			<div id="board" class="board" role="application" aria-label="Игровое поле 4 на 4"></div>
+			<div id="overlay" class="overlay hidden" aria-live="polite">
+				<div class="overlay-box">
+					<div id="overlay-text" class="overlay-text"></div>
+					<div class="overlay-actions">
+						<button id="keep-going" class="btn secondary hidden">Продолжить</button>
+						<button id="try-again" class="btn">Сыграть ещё</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>Управление: стрелки / WASD, свайпы. Классические правила 2048.</p>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
